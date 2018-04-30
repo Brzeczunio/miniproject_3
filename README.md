@@ -1,6 +1,6 @@
 # miniproject_3
 
-Instalacja dla obrzu ze studiów
+Instalacja dla obrazu ze studiów
 
 Trzeba zainstalować:
 ```
@@ -28,4 +28,18 @@ Wynik:
 python(abi) = 2.7
 python2-crypto >= 2.1
 python2-ecdsa
+```
+
+Aby korzystać ze scrolla i czekania na element trzeba użyć biblioteki:
+```
+ExtendedSelenium2Library
+```
+
+Komendy z których można korzystać:
+```
+User Click
+  [Arguments]  ${ELEMENT}
+  Scroll Element Into View  ${ELEMENT}
+  Wait Until Element is visible  ${ELEMENT}     timeout=30s
+  Click Element  ${ELEMENT}
 ```
